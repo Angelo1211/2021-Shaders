@@ -1,6 +1,6 @@
 #include "./hashes.glsl"
 
-// Shadertoy Window Res: 800x450
+// Shadertoy Window Res: 800x450 | 1200x675
 
 #define INV_GAMMA  0.454545
 #define M_PI acos(-1.0)
