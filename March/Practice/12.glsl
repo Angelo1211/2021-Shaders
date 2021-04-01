@@ -11,6 +11,7 @@ Map(vec3 p)
 }
 
 
+
 vec3
 CalcMaterial(float id, vec3 P)
 {
@@ -26,10 +27,10 @@ CalcMaterial(float id, vec3 P)
     return col;
 }
 
-CALC_SOFT_SHADOW()
-CALC_AO()
-CALC_NORMAL()
-RAY_MARCH()
+DEF_SOFT_SHADOW()
+DEF_AO()
+DEF_NORMAL()
+DEF_RAY_MARCH()
 
 vec3
 Render(vec3 ro, vec3 rd)
@@ -124,5 +125,6 @@ mainImage(out vec4 fragColor, in vec2 fragCoord)
     }
     total /= float(AA * AA);
 #endif
+
     fragColor = vec4(total, 1.0);
 }
